@@ -1,0 +1,134 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .top header{
+    width:65%;
+  }
+  .social-media-header{
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    padding-right:10px;
+  }
+  .social-media-header span{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+  }
+  .social-media-header span a{
+    display:flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+    font-size:30px;
+    padding:5px;
+    transition: 0.3s;
+  }
+  .social-media-header span a:hover{
+    box-shadow:
+    inset 0 0 5px var(--gold),
+    inset 1px 0 7px var(--black-gray),
+    inset -1px 0 7px var(--maroon),
+    inset 1px 0 20px var(--black-gray),
+    inset -1px 0 20px var(--maroon),
+    0 0 40px #fff,
+    -1px 0 7px var(--black-gray),
+    1px 0 7px var(--maroon);
+  }
+  #home .container{
+    padding:10px;
+    padding-top:1.5rem;
+  }
+  .author h1{
+    display:none;
+  }
+  .profil{
+    position:absolute;
+    top: 1%;
+    right: 5%;
+    height:100px !important;
+    width:100px !important;
+  }
+  .job h3{
+    font-size:20px
+  }
+  .about{
+    text-align:center;
+    width:100%;
+  }
+  .social-media{
+    display:none;
+  }
+  .maroon{
+    display:none;
+  }
+  footer{
+    display:none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+  .author h1{
+    font-size:30px;
+  }
+  
+  .job h3{
+    padding-left:1rem;
+  }
+  
+  .about{
+    width:100%;
+  }
+  .profil{
+      height:200px;
+      width:200px;
+      object-fit:center;
+      top:0;
+      right:5%;
+  }
+  .social-media{
+    position:absolute;
+    left:0;
+    top:2%;
+  }
+  .social-media span{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 922px) {
+  .preview-projects{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:0;
+    margin:0;
+  }
+  .preview-projects .project{
+    height:auto;
+    padding:0;
+    margin:0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .preview-projects .project .face{
+    width:270px;
+    height:170px;
+  }
+  .preview-projects .project .face.face2{
+    transform:translateY(-170px);
+  }
+  .preview-projects .project:hover .face.face2{
+    transform:translateY(-60px);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1635px) {
+  .bot-line{
+    display:none;
+  }
+}
